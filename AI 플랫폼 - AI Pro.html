@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 플랫폼 - AI Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .platform-icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+      }
+      .soft-bg {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+      .soft-blue-bg {
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header: 통일된 상단바 -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold text-indigo-600">AI4</div>
+            <span class="ml-2 text-xs text-gray-500 font-semibold">AI 플랫폼 구매대행</span>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="index.html"
+                class="text-indigo-600 hover:text-indigo-800 px-3 py-2 text-sm font-medium"
+                >홈</a
+              >
+              <a
+                href="file:///C:/Users/csivision-plan/Desktop/ai_pro/AI%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20-%20AI%20Pro.html"
+                class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
+                >AI 플랫폼</a
+              >
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="bg-indigo-600 text-white hover:bg-indigo-700 px-4 py-2 rounded-md text-sm font-medium"
+                >문의하기</a
+              >
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="text-gray-700 hover:text-indigo-600"
+              onclick="toggleMobileMenu()"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+          <a
+            href="index.html"
+            class="text-indigo-600 block px-3 py-2 text-base font-medium"
+            >홈</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 hover:text-indigo-600 block px-3 py-2 text-base font-medium"
+            >AI 플랫폼</a
+          >
+          <a
+            href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+            class="bg-indigo-600 text-white block px-3 py-2 text-base font-medium rounded-md mx-3"
+            >문의하기</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">지원하는 AI 플랫폼</h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">
+          최신 AI 기술을 활용한 다양한 플랫폼을 전문가가 선별하여 제공합니다
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+            class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300 text-center"
+          >
+            <i class="fas fa-credit-card mr-2"></i>
+            크레딧 패키지 문의하기
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI4 Credit System Section -->
+    <section class="py-20 soft-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            💳 AI4 크레딧 시스템
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            하나의 크레딧으로 모든 AI 플랫폼을 자유롭게 사용하세요
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-white p-8 rounded-xl shadow-lg card-hover text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-credit-card text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">통합 관리</h3>
+            <p class="text-gray-600">
+              모든 AI 플랫폼을 하나의 크레딧으로 통합 관리하여 편리함을 제공합니다
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg card-hover text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-piggy-bank text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">비용 절약</h3>
+            <p class="text-gray-600">
+              개별 구독 대비 최대 50% 절약 가능한 경제적인 솔루션입니다
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg card-hover text-center">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-sync-alt text-purple-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">유연한 사용</h3>
+            <p class="text-gray-600">
+              필요한 만큼만 크레딧을 사용하여 효율적인 운영이 가능합니다
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+            class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          >
+            구매 신청
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unified API Service Section -->
+    <section class="py-20 soft-blue-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            🔗 통합 서비스 API
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            개발자를 위한 강력하고 안전한 API 통합 서비스
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-chart-bar text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-800">실시간 모니터링</h3>
+            <p class="text-sm text-gray-600">
+              API 사용량과 성능을 실시간으로 모니터링
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-800">보안 강화</h3>
+            <p class="text-sm text-gray-600">
+              API 키 관리와 인증 시스템 보안 강화
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-rocket text-purple-600 text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-800">자동 스케일링</h3>
+            <p class="text-sm text-gray-600">
+              트래픽에 따른 자동 스케일링 지원
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-code text-orange-600 text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-800">RESTful API</h3>
+            <p class="text-sm text-gray-600">
+              표준 RESTful API로 쉬운 통합 제공
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+            class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          >
+            구매 신청
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Platforms Grid -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Category: 생성형 AI -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            생성형 AI
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- ChatGPT -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-green-100">
+                <i class="fas fa-robot text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">ChatGPT</h3>
+              <p class="text-gray-600 mb-4">OpenAI의 대화형 AI 어시스턴트</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Claude -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-purple-100">
+                <i class="fas fa-brain text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Claude</h3>
+              <p class="text-gray-600 mb-4">Anthropic의 AI 어시스턴트</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Midjourney -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-pink-100">
+                <i class="fas fa-palette text-pink-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Midjourney</h3>
+              <p class="text-gray-600 mb-4">AI 이미지 생성 플랫폼</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- DALL-E -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-orange-100">
+                <i class="fas fa-image text-orange-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">DALL-E</h3>
+              <p class="text-gray-600 mb-4">OpenAI의 이미지 생성 AI</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: 비즈니스 AI -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            비즈니스 AI
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Notion AI -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-gray-100">
+                <i class="fas fa-file-alt text-gray-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Notion AI</h3>
+              <p class="text-gray-600 mb-4">노션의 AI 작성 도우미</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Jasper -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-blue-100">
+                <i class="fas fa-pen-fancy text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Jasper</h3>
+              <p class="text-gray-600 mb-4">AI 콘텐츠 생성 플랫폼</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Copy.ai -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-teal-100">
+                <i class="fas fa-copy text-teal-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Copy.ai</h3>
+              <p class="text-gray-600 mb-4">AI 카피라이팅 도구</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Grammarly -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-green-100">
+                <i class="fas fa-spell-check text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Grammarly</h3>
+              <p class="text-gray-600 mb-4">AI 문법 및 스타일 검사</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: 개발 AI -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            개발 AI
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- GitHub Copilot -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-black">
+                <i class="fab fa-github text-white text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">GitHub Copilot</h3>
+              <p class="text-gray-600 mb-4">AI 코드 작성 도우미</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Cursor -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-blue-100">
+                <i class="fas fa-code text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Cursor</h3>
+              <p class="text-gray-600 mb-4">AI 기반 코드 에디터</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Replit -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-orange-100">
+                <i class="fas fa-terminal text-orange-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Replit</h3>
+              <p class="text-gray-600 mb-4">AI 지원 온라인 IDE</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Tabnine -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-purple-100">
+                <i class="fas fa-magic text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Tabnine</h3>
+              <p class="text-gray-600 mb-4">AI 코드 자동완성</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: 디자인 AI -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            디자인 AI
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Canva AI -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-blue-100">
+                <i class="fas fa-paint-brush text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Canva AI</h3>
+              <p class="text-gray-600 mb-4">AI 기반 디자인 도구</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Figma AI -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-purple-100">
+                <i class="fab fa-figma text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Figma AI</h3>
+              <p class="text-gray-600 mb-4">피그마의 AI 디자인 기능</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Adobe Sensei -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-red-100">
+                <i class="fab fa-adobe text-red-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Adobe Sensei</h3>
+              <p class="text-gray-600 mb-4">어도비 크리에이티브 AI</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+
+            <!-- Stable Diffusion -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+              <div class="platform-icon bg-green-100">
+                <i class="fas fa-atom text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Stable Diffusion</h3>
+              <p class="text-gray-600 mb-4">오픈소스 이미지 생성 AI</p>
+              <a
+                href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+                class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-center block"
+              >
+                구매 신청
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose AI Pro Section -->
+    <section class="bg-gray-100 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            왜 AI Pro를 선택해야 할까요?
+          </h2>
+          <p class="text-xl text-gray-600">
+            AI 플랫폼 구매의 모든 과정을 전문가가 대행합니다
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">안전한 결제</h3>
+            <p class="text-gray-600">
+              해외 결제 실패, 환율 변동 걱정 없이 안전하게 구매
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-headset text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">24/7 지원</h3>
+            <p class="text-gray-600">
+              계정 설정부터 사용법까지 전담 매니저가 지원
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">비용 최적화</h3>
+            <p class="text-gray-600">사용량 분석을 통한 최적의 플랜 추천</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          지금 바로 AI 플랫폼을 시작하세요
+        </h2>
+        <p class="text-xl mb-8 opacity-90">
+          전문가와 상담하고 최적의 AI 도구를 찾아보세요
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/c:/Users/csivision-plan/Desktop/ai_pro/문의하기 - AI Pro.html"
+            class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300 text-center"
+          >
+            <i class="fas fa-credit-card mr-2"></i>
+            크레딧 패키지 문의하기
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="text-2xl font-bold mb-4">AI4</div>
+            <p class="text-gray-400 mb-4">AI 플랫폼 구매 대행 전문 서비스</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">연락처</h3>
+            <div class="space-y-2 text-gray-400">
+              <p><i class="fas fa-phone mr-2"></i>031-214-2635</p>
+              <p><i class="fas fa-envelope mr-2"></i>hj.song@csi-vision.com</p>
+              <p><i class="fas fa-map-marker-alt mr-2"></i>서울특별시 송파구 송파대로 220, 101동 405호 (가락동, 가락한신아파트)</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>© 2024 AI4. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

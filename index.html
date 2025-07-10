@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pro - AI 플랫폼 구매 대행 서비스</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .ai-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: white;
+      }
+      .chatgpt {
+        background: #10a37f;
+      }
+      .claude {
+        background: #d97706;
+      }
+      .midjourney {
+        background: #7c3aed;
+      }
+      .dalle {
+        background: #ef4444;
+      }
+      .notion {
+        background: #000000;
+      }
+      .jasper {
+        background: #8b5cf6;
+      }
+      .copilot {
+        background: #0969da;
+      }
+      .canva {
+        background: #00c4cc;
+      }
+      .credit-highlight {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .popular-badge {
+        background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold text-indigo-600">AI4</div>
+            <span class="ml-2 text-xs text-gray-500 font-semibold">AI 플랫폼 구매대행</span>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a href="index.html" class="text-indigo-600 hover:text-indigo-800 px-3 py-2 text-sm font-medium">홈</a>
+              <a href="file:///C:/Users/csivision-plan/Desktop/ai_pro/AI%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20-%20AI%20Pro.html" class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">AI 플랫폼</a>
+              <a href="문의하기 - AI Pro.html" class="bg-indigo-600 text-white hover:bg-indigo-700 px-4 py-2 rounded-md text-sm font-medium">문의하기</a>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button type="button" class="text-gray-700 hover:text-indigo-600" onclick="toggleMobileMenu()">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+          <a href="index.html" class="text-indigo-600 block px-3 py-2 text-base font-medium">홈</a>
+          <a href="file:///C:/Users/csivision-plan/Desktop/ai_pro/AI%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20-%20AI%20Pro.html" class="text-gray-700 hover:text-indigo-600 block px-3 py-2 text-base font-medium">AI 플랫폼</a>
+          <a href="문의하기 - AI Pro.html" class="bg-indigo-600 text-white block px-3 py-2 text-base font-medium rounded-md mx-3">문의하기</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="flex flex-col items-center justify-center text-center text-white">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            AI 플랫폼 구매,<br />
+            <span class="text-yellow-300">전문가가 대행</span>합니다
+          </h1>
+          <p class="text-xl mb-8 text-blue-100">
+            복잡한 AI 도구 선택부터 구매, 설정, 운영까지<br />
+            원스톱 서비스로 해결하세요
+          </p>
+          
+          <!-- AI 크레딧 소개 흰 박스 -->
+          <div class="credit-highlight p-8 rounded-2xl shadow-2xl mb-8 max-w-2xl mx-auto">
+            <div class="flex items-center justify-center mb-4">
+              <span class="popular-badge text-white text-sm font-bold px-4 py-2 rounded-full">
+                🔥 가장 인기 있는 선택
+              </span>
+            </div>
+            <div class="text-gray-800">
+              <h3 class="text-2xl font-bold mb-4">AI4 크레딧 시스템</h3>
+              <p class="text-lg text-gray-600 mb-6">
+                하나의 크레딧으로 모든 AI 플랫폼을 통합 사용하세요<br />
+                ChatGPT, Claude, Midjourney 등 모든 서비스를 한 번에!
+              </p>
+              <div class="flex flex-wrap justify-center gap-4 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-lg font-semibold">
+                  <i class="fas fa-check-circle mr-2"></i>통합 크레딧
+                </div>
+                <div class="bg-green-100 text-green-700 px-4 py-2 rounded-lg font-semibold">
+                  <i class="fas fa-infinity mr-2"></i>무제한 플랫폼
+                </div>
+                <div class="bg-purple-100 text-purple-700 px-4 py-2 rounded-lg font-semibold">
+                  <i class="fas fa-headset mr-2"></i>전문가 지원
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="문의하기 - AI Pro.html" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300 text-center">
+              <i class="fas fa-credit-card mr-2"></i>
+              크레딧 패키지 문의하기
+            </a>
+            <a href="file:///C:/Users/csivision-plan/Desktop/ai_pro/AI%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20-%20AI%20Pro.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition duration-300 text-center">
+              서비스 자세히 보기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            왜 AI4를 선택해야 할까요?
+          </h2>
+          <p class="text-xl text-gray-600">
+            전문성과 신뢰성으로 차별화된 AI 플랫폼 구매 대행 서비스
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center card-hover bg-gray-50 p-8 rounded-xl">
+            <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-search text-indigo-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">AI 플랫폼 선택 컨설팅</h3>
+            <p class="text-gray-600">
+              비즈니스 목적에 맞는 최적의 AI 도구를 분석하고 추천합니다
+            </p>
+          </div>
+          <div class="text-center card-hover bg-gray-50 p-8 rounded-xl">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-shopping-cart text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">구매 대행 및 계정 설정</h3>
+            <p class="text-gray-600">
+              복잡한 구매 과정을 대신 처리하고 바로 사용할 수 있도록 설정합니다
+            </p>
+          </div>
+          <div class="text-center card-hover bg-gray-50 p-8 rounded-xl">
+            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-credit-card text-yellow-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">AI4 크레딧 시스템</h3>
+            <p class="text-gray-600">
+              AI4 크레딧 하나로 모든 AI 플랫폼을 통합 사용할 수 있습니다
+            </p>
+          </div>
+          <div class="text-center card-hover bg-gray-50 p-8 rounded-xl">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">비용 최적화 관리</h3>
+            <p class="text-gray-600">
+              사용 패턴을 분석하여 비용 효율적인 플랜을 제안합니다
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Platforms Showcase -->
+    <section class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            지원하는 AI 플랫폼
+          </h2>
+          <p class="text-xl text-gray-600">
+            국내 1위 모든 프로 소프트웨어 스토어
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+          <div class="bg-white p-6 rounded-xl text-center card-hover">
+            <div class="ai-icon chatgpt mx-auto mb-3">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h4 class="font-semibold text-sm">ChatGPT</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center card-hover">
+            <div class="ai-icon claude mx-auto mb-3">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h4 class="font-semibold text-sm">Claude</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center card-hover">
+            <div class="ai-icon midjourney mx-auto mb-3">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h4 class="font-semibold text-sm">Midjourney</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center card-hover">
+            <div class="ai-icon dalle mx-auto mb-3">
+              <i class="fas fa-image"></i>
+            </div>
+            <h4 class="font-semibold text-sm">DALL-E</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center card-hover">
+            <div class="ai-icon notion mx-auto mb-3">
+              <i class="fas fa-note-sticky"></i>
+            </div>
+            <h4 class="font-semibold text-sm">Notion AI</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center card-hover">
+            <div class="ai-icon jasper mx-auto mb-3">
+              <i class="fas fa-pen-fancy"></i>
+            </div>
+            <h4 class="font-semibold text-sm">Jasper</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center card-hover">
+            <div class="ai-icon copilot mx-auto mb-3">
+              <i class="fas fa-code"></i>
+            </div>
+            <h4 class="font-semibold text-sm">GitHub Copilot</h4>
+          </div>
+          <div class="bg-white p-6 rounded-xl text-center card-hover">
+            <div class="ai-icon canva mx-auto mb-3">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h4 class="font-semibold text-sm">Canva AI</h4>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="file:///C:/Users/csivision-plan/Desktop/ai_pro/AI%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20-%20AI%20Pro.html" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold">
+            모든 플랫폼 보기
+            <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            간단한 4단계 프로세스
+          </h2>
+          <p class="text-xl text-gray-600">복잡한 과정 없이 빠르고 간편하게</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              1
+            </div>
+            <h3 class="text-xl font-semibold mb-4">상담 신청</h3>
+            <p class="text-gray-600">필요한 AI 도구와 목적을 알려주세요</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              2
+            </div>
+            <h3 class="text-xl font-semibold mb-4">맞춤 분석</h3>
+            <p class="text-gray-600">전문가가 최적의 솔루션을 분석합니다</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              3
+            </div>
+            <h3 class="text-xl font-semibold mb-4">구매 대행</h3>
+            <p class="text-gray-600">구매부터 초기 설정까지 모두 처리합니다</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              4
+            </div>
+            <h3 class="text-xl font-semibold mb-4">지속 지원</h3>
+            <p class="text-gray-600">사용법 교육과 운영 지원을 제공합니다</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          지금 바로 시작하세요
+        </h2>
+        <p class="text-xl text-blue-100 mb-8">
+          AI 전문가와의 무료 상담으로 비즈니스 혁신을 경험해보세요
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="문의하기 - AI Pro.html" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300">
+            <i class="fas fa-phone mr-2"></i>
+            무료 상담 신청
+          </a>
+          <a href="file:///C:/Users/csivision-plan/Desktop/ai_pro/AI%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20-%20AI%20Pro.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition duration-300">
+            <i class="fas fa-rocket mr-2"></i>
+            AI 플랫폼 둘러보기
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="text-2xl font-bold mb-4">AI4</div>
+            <p class="text-gray-400 mb-4">AI 플랫폼 구매 대행 전문 서비스</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">연락처</h3>
+            <div class="space-y-2 text-gray-400">
+              <p><i class="fas fa-phone mr-2"></i>031-214-2635</p>
+              <p><i class="fas fa-envelope mr-2"></i>hj.song@csi-vision.com</p>
+              <p><i class="fas fa-map-marker-alt mr-2"></i>서울특별시 송파구 송파대로 220, 101동 405호 (가락동, 가락한신아파트)</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>© 2024 AI4. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to header
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (window.scrollY > 100) {
+          header.classList.add('shadow-lg');
+        } else {
+          header.classList.remove('shadow-lg');
+        }
+      });
+    </script>
+  </body>
+</html>

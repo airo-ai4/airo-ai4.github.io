@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)https://gensparkpublicblob.blob.core.windows.net/user-upload-image/page/toolu_01PeATPYXAPkR4GAs1hhvVHY/contact.html -->
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의하기 - AI Pro</title>
+    <link href="./AI_PRO_files/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./AI_PRO_files/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        transition: all 0.3s ease;
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+      }
+      .input-focus:focus {
+        ring-color: #667eea;
+        border-color: #667eea;
+      }
+    </style>
+    <style>
+      .genspark-notice-dialog {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10001;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .genspark-notice-content {
+        background-color: white;
+        border-radius: 8px;
+        max-width: 600px;
+        width: 90%;
+        box-sizing: border-box;
+        padding: 10px 30px 30px 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+      }
+
+      .genspark-notice-title {
+        color: #000;
+        font-family: Arial;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+
+      .genspark-notice-list {
+        margin: 24px 0;
+
+        color: #606366;
+        font-family: Arial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        padding-left: 12px;
+      }
+
+      .genspark-notice-list li {
+        margin-bottom: 12px;
+        list-style-type: disc;
+      }
+
+      .genspark-notice-list li a {
+        color: #606366;
+        text-decoration: underline;
+      }
+
+      .genspark-notice-checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+
+        color: #232425;
+
+        font-family: Arial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .genspark-notice-actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .genspark-notice-ok {
+        color: #232425;
+
+        text-align: center;
+        font-family: Arial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        padding: 6px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header: 통일된 상단바 -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="text-2xl font-bold text-indigo-600">AI4</div>
+            <span class="ml-2 text-xs text-gray-500 font-semibold">AI 플랫폼 구매대행</span>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a
+                href="index.html"
+                class="text-indigo-600 hover:text-indigo-800 px-3 py-2 text-sm font-medium"
+                >홈</a
+              >
+              <a
+                href="AI 플랫폼 - AI Pro.html"
+                class="text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium"
+                >AI 플랫폼</a
+              >
+              <a
+                href="문의하기 - AI Pro.html"
+                class="bg-indigo-600 text-white hover:bg-indigo-700 px-4 py-2 rounded-md text-sm font-medium"
+                >문의하기</a
+              >
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="text-gray-700 hover:text-indigo-600"
+              onclick="toggleMobileMenu()"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+          <a
+            href="index.html"
+            class="text-indigo-600 block px-3 py-2 text-base font-medium"
+            >홈</a
+          >
+          <a
+            href="AI 플랫폼 - AI Pro.html"
+            class="text-gray-700 hover:text-indigo-600 block px-3 py-2 text-base font-medium"
+          >AI 플랫폼</a>
+          <a
+            href="문의하기 - AI Pro.html"
+            class="bg-indigo-600 text-white block px-3 py-2 text-base font-medium rounded-md mx-3"
+            >문의하기</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold mb-6">문의하기</h1>
+        <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          AI 플랫폼 구매 대행 서비스에 대해 궁금한 점이 있으시면<br />
+          언제든지 연락해 주세요. 전문 컨설턴트가 도와드리겠습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 card-hover">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">상담 신청하기</h2>
+            <form class="space-y-6" id="contactForm">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >이름 *</label
+                  >
+                  <input
+                    type="text"
+                    name="user_name"
+                    required=""
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 input-focus transition-all"
+                  />
+                </div>
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >회사명</label
+                  >
+                  <input
+                    type="text"
+                    name="company"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 input-focus transition-all"
+                  />
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >이메일 *</label
+                  >
+                  <input
+                    type="email"
+                    name="user_email"
+                    required=""
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 input-focus transition-all"
+                  />
+                </div>
+                <div>
+                  <label class="block text-gray-700 font-semibold mb-2"
+                    >연락처 *</label
+                  >
+                  <input
+                    type="tel"
+                    name="user_phone"
+                    required=""
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 input-focus transition-all"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2"
+                  >관심 서비스</label
+                >
+                <select
+                  name="interest"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 input-focus transition-all"
+                >
+                  <option value="">선택해 주세요</option>
+                  <option value="AI 플랫폼 선택 컨설팅">AI 플랫폼 선택 컨설팅</option>
+                  <option value="구매 대행 서비스">구매 대행 서비스</option>
+                  <option value="계정 설정 및 초기 구성">계정 설정 및 초기 구성</option>
+                  <option value="사용자 교육">사용자 교육</option>
+                  <option value="운영 지원">운영 지원</option>
+                  <option value="종합 패키지">종합 패키지</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2"
+                  >문의 내용 *</label
+                >
+                <textarea
+                  name="message"
+                  required=""
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 input-focus transition-all"
+                  placeholder="궁금한 점이나 요청사항을 자세히 적어주세요."
+                ></textarea>
+              </div>
+
+              <div class="flex items-center space-x-3">
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  class="w-4 h-4 text-purple-600"
+                />
+                <label for="privacy" class="text-sm text-gray-600"
+                  >개인정보 수집 및 이용에 동의합니다.</label
+                >
+              </div>
+
+              <button
+                type="submit"
+                class="w-full btn-primary text-white font-semibold py-4 px-8 rounded-lg"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>
+                상담 신청하기
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <!-- Contact Info Card -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 card-hover">
+              <h3 class="text-2xl font-bold text-gray-800 mb-6">연락처 정보</h3>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-phone text-white"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-800">전화번호</div>
+                    <div class="text-gray-600">031-214-2635</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-envelope text-white"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-800">이메일</div>
+                    <div class="text-gray-600">hj.song@csi-vision.com</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-map-marker-alt text-white"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-800">주소</div>
+                    <div class="text-gray-600">
+                      서울특별시 송파구 송파대로 220,<br />101동 405호 (가락동, 가락한신아파트)
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center"
+                  >
+                    <i class="fas fa-clock text-white"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-800">운영시간</div>
+                    <div class="text-gray-600">
+                      평일 09:00 - 18:00<br />주말 및 공휴일 휴무
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Contact -->
+           
+            
+
+            <!-- FAQ Quick Links -->
+            
+              
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="text-2xl font-bold mb-4">AI4</div>
+            <p class="text-gray-400 mb-4">AI 플랫폼 구매 대행 전문 서비스</p>
+            <div class="flex space-x-4 mb-4">
+        
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">연락처</h3>
+            <div class="space-y-2 text-gray-400">
+              <p><i class="fas fa-phone mr-2"></i>031-214-2635</p>
+              <p><i class="fas fa-envelope mr-2"></i>hj.song@csi-vision.com</p>
+              <p><i class="fas fa-map-marker-alt mr-2"></i>서울특별시 송파구 송파대로 220, 101동 405호 (가락동, 가락한신아파트)</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>© 2024 AI4. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init('Seu5UuU_l2ezAr7C5');
+      })();
+
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // 기존 유효성 검사
+        const requiredFields = this.querySelectorAll('[required]');
+        let isValid = true;
+        requiredFields.forEach((field) => {
+          if (!field.value.trim()) {
+            isValid = false;
+            field.classList.add('border-red-500');
+          } else {
+            field.classList.remove('border-red-500');
+          }
+        });
+        const privacyCheck = document.getElementById('privacy');
+        if (!privacyCheck.checked) {
+          isValid = false;
+          alert('개인정보 수집 및 이용에 동의해 주세요.');
+          return;
+        }
+        if (isValid) {
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>전송 중...';
+          submitBtn.disabled = true;
+          emailjs.sendForm('service_e92z2pa', 'template_f68jrdq', this)
+            .then(function() {
+              alert('상담 신청이 완료되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+              submitBtn.innerHTML = originalText;
+              submitBtn.disabled = false;
+              document.getElementById('contactForm').reset();
+            }, function(error) {
+              alert('메일 전송에 실패했습니다: ' + JSON.stringify(error));
+              submitBtn.innerHTML = originalText;
+              submitBtn.disabled = false;
+            });
+        } else {
+          alert('필수 항목을 모두 입력해 주세요.');
+        }
+      });
+    </script>
+
+    <script id="html_badge_script1">
+      window.__genspark_remove_badge_link =
+        'https://www.genspark.ai/api/html_badge/' +
+        'remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDiMnBap%2FRZ3fkOFxOXlqdiPIyDhTR1kSz7mAhfY%2BodOMVBB7t7Fhw8ithQcQwZhnsKJbkGjIa7TRAIeVpVQbYWnVpoc4NCRq8DZ0BJKi2ZBzYiqqfqyzkeyQmtD8NiBrVU3eK2YCD2mkWg96Gnap2ROC3qPLH4tyOGtgqR3Ux3VzXbWsbhGhBuEq95isK%2BYLiJ4aEoXZaAiu5lNA2cH3%2Bj2V0l72U6NHeufrrJ3BOwrk2sm2xXwUBixQ0YGnrzcog3p47%2FWVIeGYCDOWc3tEzaE3fcF7S1TKY%2F9nFcJWlCbuWuvH9JCn1rSFemtzZM6xjivgv6j7WTJHtkSH6XlH25u1W1wBhTSMmwyQvDhiRM7juKZmDn3ilk9mwRcnN5aIZGY4Vb7S2D6S3CcAZOWker49Wymf5uRIsYaghKMfuu3A10Xmm1wwcuFY%2BR3rkLIp7fTHe0HyBjLvo8Bm%2Fn5I3i92SCk0G8vagyvADmN0ZP5w';
+      window.__genspark_locale = 'ko-KR';
+      window.__genspark_token =
+        'To/BnjzloZ3UfQdcSaYfDiMnBap/RZ3fkOFxOXlqdiPIyDhTR1kSz7mAhfY+odOMVBB7t7Fhw8ithQcQwZhnsKJbkGjIa7TRAIeVpVQbYWnVpoc4NCRq8DZ0BJKi2ZBzYiqqfqyzkeyQmtD8NiBrVU3eK2YCD2mkWg96Gnap2ROC3qPLH4tyOGtgqR3Ux3VzXbWsbhGhBuEq95isK+YLiJ4aEoXZaAiu5lNA2cH3+j2V0l72U6NHeufrrJ3BOwrk2sm2xXwUBixQ0YGnrzcog3p47/WVIeGYCDOWc3tEzaE3fcF7S1TKY/9nFcJWlCbuWuvH9JCn1rSFemtzZM6xjivgv6j7WTJHtkSH6XlH25u1W1wBhTSMmwyQvDhiRM7juKZmDn3ilk9mwRcnN5aIZGY4Vb7S2D6S3CcAZOWker49Wymf5uRIsYaghKMfuu3A10Xmm1wwcuFY+R3rkLIp7fTHe0HyBjLvo8Bm/n5I3i92SCk0G8vagyvADmN0ZP5w';
+    </script>
+
+    <script
+      id="html_notice_dialog_script"
+      src="./문의하기 - AI Pro_files/notice_dialog.js.다운로드"
+    ></script>
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      }
+    </script>
+  </body>
+</html>
