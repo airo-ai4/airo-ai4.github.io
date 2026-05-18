@@ -434,7 +434,7 @@
           const originalText = submitBtn.innerHTML;
           submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>전송 중...';
           submitBtn.disabled = true;
-          emailjs.sendForm('service_hausq6g', 'template_zmggsgd', this)
+          emailjs.sendForm('service_hausq6g', 'template_vgrzfou', this)
             .then(function() {
               alert('상담 신청이 완료되었습니다. 빠른 시일 내에 연락드리겠습니다.');
               submitBtn.innerHTML = originalText;
